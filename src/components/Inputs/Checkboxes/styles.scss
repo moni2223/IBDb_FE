@@ -1,0 +1,48 @@
+.checkboxes-container {
+  display: flex;
+  margin: 10px 0px;
+  width: 99%;
+  margin-left: 2%;
+  &.column {
+    flex-direction: column;
+    .checkbox-container {
+      margin: 5px 0px;
+    }
+  }
+  .with-wrapper {
+    margin: 5px 0px;
+    .checkbox-container {
+      margin: 0;
+    }
+    > label {
+      display: inline-block;
+    }
+  }
+  .checkbox-container {
+    display: flex;
+    margin-right: 5%;
+    align-items: center;
+    width: 100%;
+    .outer-square {
+      border: 1px solid black;
+      // border-radius: 5%;
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .tick {
+        display: none;
+        background-image: url("../../../assets/icons/checkbox-tick-1.svg") !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        &.selected {
+          display: block;
+        }
+      }
+    }
+  }
+}

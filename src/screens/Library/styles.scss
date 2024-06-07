@@ -1,0 +1,19 @@
+.book-grid-container {
+  @apply w-[550px] h-40 flex items-center shadow-lg rounded-md cursor-pointer;
+  .book-cover {
+    @apply bg-contain bg-no-repeat w-40 h-40;
+  }
+  .book-information {
+    width: calc(100% - 11rem);
+    @apply h-full flex flex-col gap-3;
+  }
+}
+
+.reviews-container {
+  @apply w-[98%] ml-3 h-[350px] overflow-y-auto mt-2 p-4;
+}
+@media only screen and (max-width: 1250px) {
+  .book-grid-container {
+    @apply w-[450px];
+  }
+}
